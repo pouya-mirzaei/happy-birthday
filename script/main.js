@@ -1,6 +1,8 @@
 // Import the data to customize and insert them into page
+const song = document.getElementById('song');
 document.body.addEventListener('click', () => {
   song.play();
+  fetchData();
 });
 
 const fetchData = () => {
@@ -307,4 +309,3 @@ const animationTimeline = () => {
 };
 
 // Run fetch and animation in sequence
-fetchData();
