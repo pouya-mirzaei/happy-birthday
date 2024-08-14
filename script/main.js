@@ -1,3 +1,8 @@
+const song = document.getElementById('song');
+window.addEventListener('DOMContentLoaded', () => {
+  song.play();
+});
+
 // Import the data to customize and insert them into page
 const fetchData = () => {
   fetch('customize.json')
