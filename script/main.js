@@ -1,4 +1,8 @@
 // Import the data to customize and insert them into page
+document.body.addEventListener('click', () => {
+  song.play();
+});
+
 const fetchData = () => {
   fetch("customize.json")
     .then(data => data.json())
